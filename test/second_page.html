@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Second Web Page</title>
+<style >
+  
+  .centered-content {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+  h1 {
+    text-align: center;
+      font-size: 14px;
+      margin-top: 20px;
+    font-size: 100px ;
+  }
+  body{
+    font-size: 200px;
+    font-display:;
+      }
+</style>
+
+</head>
+
+
+<body>
+  <h1>The number of visites are :</h1>
+  <div class="centered-content">
+  
+  <p><span id="visits-counter"></span></p>
+  <script>
+    let counter = localStorage.getItem('visits') || 0;
+    document.getElementById('visits-counter').innerText = counter;
+  </script>
+
+  <!-- Your content here -->
+</div>
+</body>
+</html>
+
+
+
+
+
+
